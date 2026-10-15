@@ -1,0 +1,1230 @@
+﻿<Window       
+        Closing="WindowClosing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="MainWindow1" mc:Ignorable="d" x:Class="Казанская_ТЭЦ_3.MainWindow"        
+    Title="Казанская ТЭЦ-3" Width="1376" Height="819" HorizontalAlignment="Left" Left="0" Top="0" Margin="16,0,17,0">
+
+    <Grid Background="#FF494949" Margin="5,0">
+        <TabControl x:Name="tabControl1" Margin="0,0,0,-2" Foreground="#FFEEEFFF">
+            <TabControl.ContextMenu>
+                <ContextMenu/>
+            </TabControl.ContextMenu>
+            <TabItem x:Name="tabPage1" Header="Исходные данные" Margin="-2,0" Padding="0" FontSize="16" Width="206" Height="43" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Grid Background="#FF494949" MinHeight="36" Margin="-4,-3,-4,-4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="220"/>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition Width="243"/>
+                        <ColumnDefinition Width="151"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.BindingGroup>
+                        <BindingGroup/>
+                    </Grid.BindingGroup>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="21"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Content="электрическая нагрузка станции" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="0,0,24,0"/>
+                    <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="18" Margin="16,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="отпуск пара 30 ата" FontSize="12" Foreground="#FF32EBFB" Grid.Row="3" Padding="0" Height="16" VerticalAlignment="Top" Margin="0,3,41,0"/>
+                    <Label Content="отпуск пара 45 ата" FontSize="12" Foreground="#FF32EBFB" Grid.Row="4" Padding="0" Height="22" VerticalAlignment="Top" Margin="0,4,54,0"/>
+                    <Label Content="расход пара 13 ата на ТХ" HorizontalAlignment="Left" Width="158" FontSize="12" Foreground="#FF32EBFB" Grid.Row="8" Padding="0" Height="16" VerticalAlignment="Top" Margin="0,8,0,0"/>
+                    <Label Content="подпитка в сырой воде" HorizontalAlignment="Left" Width="158" FontSize="12" Foreground="#FF32EBFB" Grid.Row="7" Padding="0" Height="16" VerticalAlignment="Top" Margin="0,7,0,0"/>
+                    <Label Content="подпитка дистиллятом" HorizontalAlignment="Left" Width="171" FontSize="12" Foreground="#FF32EBFB" Grid.Row="6" Padding="0" Height="16" VerticalAlignment="Top" Margin="0,6,0,0"/>
+                    <Label Content="подпитка ХОБВ" HorizontalAlignment="Left" Width="158" FontSize="12" Foreground="#FF32EBFB" Grid.Row="5" Padding="0" Height="16" VerticalAlignment="Top" Margin="0,5,0,0"/>
+                    <Label Content="расход пара 13 ата на прочие нужды" HorizontalAlignment="Left" Width="208" FontSize="12" Foreground="#FF32EBFB" Grid.Row="9" Padding="0" Margin="0,9,0,13"/>
+                    <Label Content="температура сырой воды" HorizontalAlignment="Left" Width="203" FontSize="12" Foreground="#FF32EBFB" Grid.Row="10" Padding="0" Height="16" VerticalAlignment="Top" Margin="0,10,0,0"/>
+                    <Label Content="общий расход сетевой воды" HorizontalAlignment="Left" Width="171" FontSize="12" Foreground="#FF32EBFB" Grid.Row="11" Padding="0" Height="17" VerticalAlignment="Top" Margin="0,8,0,0"/>
+                    <Label Content="подпитка теплосети: расх. / темп." HorizontalAlignment="Left" Width="188" FontSize="12" Foreground="#FF32EBFB" Grid.Row="12" Padding="0" Height="16" VerticalAlignment="Top" Margin="0,6,0,0"/>
+                    <Label Content="отпуск тепла в горячей воде" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Grid.Row="1" Margin="0,1,54,0"/>
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="18" Margin="16,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox HorizontalAlignment="Left" Height="18" Margin="16,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="50" FontSize="9" Padding="5,0" Grid.Row="2" Grid.RowSpan="2"/>
+                    <Label Content="отпуск пара 13 ата" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Grid.Row="2" Margin="0,2,41,0"/>
+                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="18" Margin="16,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <Label Content="удельный расход топлива на отпуск т/э" FontSize="12" Foreground="#FF32EBFB" Grid.Row="13" Padding="0" Height="16" VerticalAlignment="Top" Grid.ColumnSpan="4" Margin="0,6,24,0"/>
+                    <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="18" Margin="16,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="18" Margin="16,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox30" HorizontalAlignment="Left" Height="18" Margin="16,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox70" HorizontalAlignment="Left" Height="18" Margin="16,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox29" HorizontalAlignment="Left" Height="18" Margin="16,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox28" HorizontalAlignment="Left" Height="18" Margin="16,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="18" Margin="16,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox14" HorizontalAlignment="Left" Height="18" Margin="16,0,0,31" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="18" Margin="16,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="18" Margin="12,0,0,28" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="57" FontSize="14" Padding="5,-2,5,0" Grid.Row="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox12" HorizontalAlignment="Left" Height="18" Margin="16,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="13" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <Label Content="МВт" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Margin="71,17.999,0,1.001"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,22.249,0,0" Grid.Row="4" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,21.124,0,0" Grid.Row="3" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,19.999,0,0" Grid.Row="2"/>
+                    <Label Content="Гкал/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="38.666" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,18.999,0,0" Grid.Row="1"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,27.374,0,0" Grid.Row="9" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,26.374,0,0" Grid.Row="8" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,25.249,0,0" Grid.Row="7" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,24.249,0,0" Grid.Row="6" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,23.249,0,0" Grid.Row="5" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,24.374,0,0" Grid.Row="12" Grid.RowSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="75,25.711,0,0" Grid.Row="11" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,28.374,0,0" Grid.Row="10" Grid.RowSpan="2"/>
+                    <Label Content="кг/Гкал" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="64" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,23.369,0,0" Grid.Row="13" Grid.RowSpan="2"/>
+                    <GroupBox Grid.Column="1" Header="Турбоагрегаты" Grid.ColumnSpan="21" Grid.RowSpan="10" Margin="2,9,0,13"/>
+                    <GroupBox Grid.Column="2" Header="ТГ-1" Margin="0,19,0,27" Grid.Row="1" Grid.RowSpan="9" Grid.ColumnSpan="3"/>
+                    <GroupBox Grid.Column="6" Header="ТГ-2" Margin="0,19,0,9" Grid.RowSpan="4" Grid.Row="1"/>
+                    <Label Content="G св." FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="11,35.836,63,20.164" Grid.Column="2" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="76.68,35.836,7,20.164" Grid.Column="3" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="tос" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="5.004,33.336,53.321,0" Grid.Column="3" Grid.Row="6" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="76.513,34.336,7,0" Grid.Column="3" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="textBox13" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="5" Grid.Column="3" Margin="29.447,35,18.553,15" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.RowSpan="2" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="textBox15" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="6" Grid.Column="3" Margin="29.447,32.5,18.553,17.5" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.RowSpan="2" Text="50" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <ComboBox x:Name="combobox1" Grid.Column="2" Margin="6,0,6,2" Grid.Row="3" VerticalAlignment="Bottom" SelectedIndex="0" Grid.ColumnSpan="3" FontSize="18" HorizontalContentAlignment="Center" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <ComboBox x:Name="combobox2" Grid.Column="6" Margin="3,6,2,0" Grid.Row="3" VerticalAlignment="Top" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Padding="2,4" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <GroupBox Grid.Column="9" Header="ТГ-1" Margin="54,21,35,27" Grid.Row="1" Grid.RowSpan="9"/>
+                    <GroupBox Grid.Column="8" Header="ТГ-3" Margin="2,20,6,26" Grid.RowSpan="9" Grid.ColumnSpan="4" Grid.Row="1"/>
+                    <ComboBox x:Name="combobox3" Grid.Column="8" Margin="6,6,6,0" Grid.Row="3" VerticalAlignment="Top" SelectedIndex="0" Grid.ColumnSpan="3" FontSize="18" HorizontalContentAlignment="Center" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+
+                    <Label Content="G св." FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="11,35.836,63,20.164" Grid.Column="8" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="76.68,35.836,7,20.664" Grid.Column="9" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="tос" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="5.004,33.336,53.321,22.664" Grid.Column="9" Grid.Row="6" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="76.513,34.336,7,0" Grid.Column="9" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="textBox22" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="5" Grid.Column="9" Margin="29.474,35,18.526,15" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.RowSpan="2" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="textBox18" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="6" Grid.Column="9" Margin="29.5,32.5,18.5,17.5" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.RowSpan="2" Text="50" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <GroupBox Grid.Column="12" Header="ТГ-4" Margin="0,19,0,27" Grid.Row="1" Grid.RowSpan="9" Grid.ColumnSpan="3">
+
+                    </GroupBox>
+                    <ComboBox x:Name="combobox4" Grid.Column="12" Margin="6,6,6,0" Grid.Row="3" VerticalAlignment="Top" SelectedIndex="0" Grid.ColumnSpan="3" FontSize="18" HorizontalContentAlignment="Center" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <GroupBox Grid.Column="13" Header="отбор" Margin="0,11,0,12" Grid.Row="4" Grid.RowSpan="2" FontSize="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="radioButton8" Content="1" Height="18" VerticalAlignment="Top" Padding="4,-5,0,0" Margin="5,2,5,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+                            <RadioButton x:Name="radioButton10" Content="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="33" Margin="5,2,0,0" Padding="4,-5,0,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+
+                        </Grid>
+                    </GroupBox>
+                    <Label Content="G св." FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="11,35.836,63,20.664" Grid.Column="12" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="76.68,35.836,7,20.664" Grid.Column="13" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="tос" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="5.004,33.336,53.321,22.664" Grid.Column="13" Grid.Row="6" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="76.513,34.336,7,0" Grid.Column="13" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="textBox19" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="5" Grid.Column="13" Margin="29.474,35,18.526,0" RenderTransformOrigin="0.5,0.5" Height="22" UseLayoutRounding="False" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="textBox21" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="6" Grid.Column="13" Margin="29.493,32.5,18.507,16.5" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.RowSpan="2" Text="50" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <GroupBox Grid.Column="16" Header="ТГ-5" Margin="0,19,0,9" Grid.RowSpan="4" Grid.Row="1"/>
+                    <ComboBox x:Name="combobox5" Grid.Column="16" Margin="3,6,2,0" Grid.Row="3" VerticalAlignment="Top" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Padding="2,4" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <GroupBox Grid.Column="18" Header="ТГ-6" Margin="0,19,0,27" Grid.Row="1" Grid.RowSpan="9" Grid.ColumnSpan="3"/>
+                    <ComboBox x:Name="combobox6" Grid.Column="18" Margin="6,6,6,0" Grid.Row="3" VerticalAlignment="Top" SelectedIndex="0" Grid.ColumnSpan="3" FontSize="18" HorizontalContentAlignment="Center" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="G св." FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="11,35.836,63,20.664" Grid.Column="18" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="т/ч" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="76.68,35.836,7,20.664" Grid.Column="19" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <Label Content="tос" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="5.004,33.336,53.321,0" Grid.Column="19" Grid.Row="6" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="76.513,34.336,7,0" Grid.Column="19" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="textBox20" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="5" Grid.Column="19" Margin="29.474,35,18.526,15" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.RowSpan="2" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="textBox40" TextWrapping="Wrap" FontSize="12" Padding="5,0" Grid.Row="6" Grid.Column="19" Margin="29.5,32.5,18.5,17.5" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.RowSpan="2" Text="50" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <GroupBox Grid.Column="22" Header="Энергетические котлы" Margin="21,9,150,6" Grid.RowSpan="10" Grid.ColumnSpan="2"/>
+                    <ComboBox x:Name="combobox13" Grid.Column="22" Margin="0,9,15,34" Grid.Row="1" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Padding="4" OverridesDefaultStyle="False" HorizontalAlignment="Right" Width="95" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="ЭК-1" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,13.19,127,34" Grid.Column="22" Grid.Row="1" HorizontalAlignment="Right" Width="73.513" Grid.RowSpan="2"/>
+                    <ComboBox x:Name="combobox19" Grid.Column="22" Margin="0,14,15,29" Grid.Row="7" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Padding="4" OverridesDefaultStyle="False" HorizontalAlignment="Right" Width="95" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="ЭК-7" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,18.19,127,29" Grid.Column="22" Grid.Row="7" HorizontalAlignment="Right" Width="73.513" Grid.RowSpan="2"/>
+                    <ComboBox x:Name="combobox18" Grid.Column="22" Margin="0,14,15,29" Grid.Row="6" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Padding="4" OverridesDefaultStyle="False" HorizontalAlignment="Right" Width="95" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="ЭК-6" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,18.19,127,29" Grid.Column="22" Grid.Row="6" HorizontalAlignment="Right" Width="73.513" Grid.RowSpan="2"/>
+                    <ComboBox x:Name="combobox17" Grid.Column="22" Margin="0,13,15,30" Grid.Row="5" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Padding="4" OverridesDefaultStyle="False" HorizontalAlignment="Right" Width="95" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="ЭК-5" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,17.19,127,30" Grid.Column="22" Grid.Row="5" HorizontalAlignment="Right" Width="73.513" Grid.RowSpan="2"/>
+                    <ComboBox x:Name="combobox16" Grid.Column="22" Margin="0,12,15,31" Grid.Row="4" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Padding="4" OverridesDefaultStyle="False" HorizontalAlignment="Right" Width="95" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="ЭК-4" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,16.19,127,31" Grid.Column="22" Grid.Row="4" HorizontalAlignment="Right" Width="73.513" Grid.RowSpan="2"/>
+                    <ComboBox x:Name="combobox15" Grid.Column="22" Margin="0,11,15,32" Grid.Row="3" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Padding="4" OverridesDefaultStyle="False" HorizontalAlignment="Right" Width="95" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="ЭК-3" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,15.19,127,32" Grid.Column="22" Grid.Row="3" HorizontalAlignment="Right" Width="73.513" Grid.RowSpan="2"/>
+                    <ComboBox x:Name="combobox14" Grid.Column="22" Margin="0,10,15,33" Grid.Row="2" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Padding="4" OverridesDefaultStyle="False" HorizontalAlignment="Right" Width="95" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="ЭК-2" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,14.19,127,33" Grid.Column="22" Grid.Row="2" HorizontalAlignment="Right" Width="73.513" Grid.RowSpan="2"/>
+                    <Button x:Name="Button1" Content="Расчёт" Grid.Column="13" HorizontalAlignment="Left" Grid.Row="15" Width="85" Click="Button_Click_1" Margin="0,0,0,23" Height="34" VerticalAlignment="Bottom" Grid.RowSpan="2"/>
+                    <GroupBox Grid.Column="1" Header="ПТН" Grid.Row="10" VerticalAlignment="Top" Height="94" Grid.ColumnSpan="6" Grid.RowSpan="3" Margin="0,10,88,0"/>
+                    <Label Content="ПТН-1" FontSize="14" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="5,14.5,63,5.5" Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="3"/>
+                    <Label Content="ПТН-2" FontSize="14" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="5,6.5,63,11.19" Grid.Column="1" Grid.Row="12" Grid.ColumnSpan="3"/>
+                    <ComboBox x:Name="combobox7" Grid.Column="3" Margin="26,8,90,0" Grid.Row="11" SelectedIndex="0" Grid.ColumnSpan="4" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <ComboBox x:Name="combobox8" Grid.Column="3" Margin="26,1,90,0" Grid.Row="12" VerticalAlignment="Top" SelectedIndex="0" Grid.ColumnSpan="4" FontSize="18" HorizontalContentAlignment="Center" Text="резерв">
+                        <ComboBoxItem Height="25" Content="резерв" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="работа" FontSize="18" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="ремонт" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <GroupBox Grid.Column="6" Header="Тип расчёта" HorizontalAlignment="Left" Grid.Row="10" VerticalAlignment="Top" Height="127" Width="200" Grid.ColumnSpan="7" Grid.RowSpan="4" Margin="54,10,0,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="41*"/>
+                                <RowDefinition Height="52*"/>
+                            </Grid.RowDefinitions>
+                            <RadioButton x:Name="radioButton9" Margin="0,0,18,0" FontSize="12" RenderTransformOrigin="0.5,0.5" Padding="4,-1,4,0" Grid.Row="1" HorizontalAlignment="Right" Width="163" IsChecked="True">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                                <RadioButton.Content>
+                                    <TextBox TextWrapping="Wrap" IsReadOnly="True" BorderThickness="0" 
+                                     Text="оптимизация финансового результата" Width="142" Padding="0,5" Height="42" Foreground="#FF32EBFB" />
+                                </RadioButton.Content>
+                            </RadioButton>
+                            <RadioButton x:Name="radioButton7" Margin="18,9,17,0" FontSize="12" RenderTransformOrigin="0.5,0.5" Padding="4,0" Height="23" VerticalAlignment="Top" VerticalContentAlignment="Top">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                                <TextBox TextWrapping="Wrap" IsReadOnly="True" BorderThickness="0" 
+                            		Text="оптимизация ТЭП" Width="142" Padding="0,-4,0,0" Height="23" Foreground="#FF32EBFB" />
+                            </RadioButton>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Column="13" Header="Расчёт периода" HorizontalAlignment="Left" Grid.Row="10" VerticalAlignment="Top" Height="148" Width="324" Grid.ColumnSpan="8" Grid.RowSpan="5" Margin="10,10,0,0"/>
+                    <Button x:Name="Button2" Grid.Column="13" HorizontalAlignment="Left" Margin="15,31,0,0" Grid.Row="12" VerticalAlignment="Top" Width="134" Height="48" Grid.ColumnSpan="4" Grid.RowSpan="3" ToolTip="Выберите период расчёта" Click="Button2_Click">
+                        <Button.Content>
+                            <TextBlock Text="исходные параметры" TextWrapping="Wrap"/>
+                        </Button.Content>
+                    </Button>
+                    <Label Content="Период" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,8.564,43.5,2.626" Grid.Column="16" Grid.Row="11" HorizontalAlignment="Right" Width="73.513" Grid.ColumnSpan="4"/>
+                    <Label Content="с" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,0,28.75,11.19" Grid.Column="16" Grid.Row="12" HorizontalAlignment="Right" Width="18.013"/>
+                    <Label Content="до" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,0.75,64.5,10.44" Grid.Column="19" Grid.Row="12" HorizontalAlignment="Right" Width="18.013"/>
+                    <ComboBox x:Name="combobox12" Grid.Column="19" Margin="30,0,0,0" Grid.Row="12" VerticalAlignment="Top" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Text="1">
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="6"/>
+                        <ComboBoxItem Content="7"/>
+                        <ComboBoxItem Content="8"/>
+                        <ComboBoxItem Content="9"/>
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="11"/>
+                        <ComboBoxItem Content="12"/>
+                        <ComboBoxItem Content="13"/>
+                        <ComboBoxItem Content="14"/>
+                        <ComboBoxItem Content="15"/>
+                        <ComboBoxItem Content="16"/>
+                        <ComboBoxItem Content="17"/>
+                        <ComboBoxItem Content="18"/>
+                        <ComboBoxItem Content="19"/>
+                        <ComboBoxItem Content="20"/>
+                        <ComboBoxItem Content="21"/>
+                        <ComboBoxItem Content="22"/>
+                        <ComboBoxItem Content="23"/>
+                        <ComboBoxItem Content="24"/>
+                        <ComboBoxItem Content="25"/>
+                        <ComboBoxItem Content="26"/>
+                        <ComboBoxItem Content="27"/>
+                        <ComboBoxItem Content="28"/>
+                        <ComboBoxItem Content="29"/>
+                        <ComboBoxItem Content="30"/>
+                        <ComboBoxItem Content="31"/>
+                    </ComboBox>
+                    <ComboBox x:Name="combobox9" Grid.Column="13" Margin="15,16,51,14" Grid.Row="11" SelectedIndex="0" Grid.ColumnSpan="4" FontSize="24" HorizontalContentAlignment="Center" Height="Auto" Grid.RowSpan="2" Text="неактивен">
+                        <ComboBoxItem Height="30" FontSize="24" Content="неактивен" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                        <ComboBoxItem Height="30" FontSize="24" Content="активен" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0" Padding="0"/>
+
+                    </ComboBox>
+                    <ComboBox x:Name="combobox11" Grid.Column="16" Margin="65,0,89,0" Grid.Row="12" VerticalAlignment="Top" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Text="1" Grid.ColumnSpan="4" Width="60">
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="6"/>
+                        <ComboBoxItem Content="7"/>
+                        <ComboBoxItem Content="8"/>
+                        <ComboBoxItem Content="9"/>
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="11"/>
+                        <ComboBoxItem Content="12"/>
+                        <ComboBoxItem Content="13"/>
+                        <ComboBoxItem Content="14"/>
+                        <ComboBoxItem Content="15"/>
+                        <ComboBoxItem Content="16"/>
+                        <ComboBoxItem Content="17"/>
+                        <ComboBoxItem Content="18"/>
+                        <ComboBoxItem Content="19"/>
+                        <ComboBoxItem Content="20"/>
+                        <ComboBoxItem Content="21"/>
+                        <ComboBoxItem Content="22"/>
+                        <ComboBoxItem Content="23"/>
+                        <ComboBoxItem Content="24"/>
+                        <ComboBoxItem Content="25"/>
+                        <ComboBoxItem Content="26"/>
+                        <ComboBoxItem Content="27"/>
+                        <ComboBoxItem Content="28"/>
+                        <ComboBoxItem Content="29"/>
+                        <ComboBoxItem Content="30"/>
+                        <ComboBoxItem Content="31"/>
+                    </ComboBox>
+                    <GroupBox Grid.Column="22" Header="Выбор состава оборудования" HorizontalAlignment="Left" Grid.Row="10" VerticalAlignment="Top" Height="164" Width="332" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="5,10,0,0"/>
+                    <Label Content="Состав турбин" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,13,106,34.19" Grid.Column="22" Grid.Row="11" HorizontalAlignment="Right" Width="121.513" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                    <Label Content="Состав котлов" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,32.19,106,15" Grid.Column="22" Grid.Row="12" HorizontalAlignment="Right" Width="121.513" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox41" TextWrapping="Wrap" FontSize="16" Padding="5,0" Grid.Row="12" Grid.Column="22" Margin="170,3.5,67.877,2.5" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.ColumnSpan="2" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="textBox42" TextWrapping="Wrap" FontSize="16" Padding="5,0" Grid.Row="13" Grid.Column="22" Margin="181.339,25.334,78.661,16.666" RenderTransformOrigin="0.5,0.5" Height="Auto" UseLayoutRounding="False" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalContentAlignment="Center">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.507"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.474"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <ComboBox x:Name="combobox10" Grid.Column="22" Margin="15,15,77,15" Grid.Row="12" SelectedIndex="0" FontSize="24" HorizontalContentAlignment="Center" Height="Auto" Grid.RowSpan="2" Text="неактивен">
+                        <ComboBoxItem Height="30" FontSize="24" Content="неактивен" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                        <ComboBoxItem Height="30" FontSize="24" Content="активен" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                    </ComboBox>
+                    <ComboBox x:Name="combobox20" Grid.Column="22" Margin="76,29,37,14" Grid.Row="8" SelectedIndex="0" FontSize="18" HorizontalContentAlignment="Center" Height="Auto" Text="разрешено" Grid.RowSpan="2">
+                        <ComboBoxItem Height="25" Content="разрешено" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                        <ComboBoxItem Height="25" Content="запрещено" FontSize="18" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    </ComboBox>
+                    <Label Content="динамический состав котлов" FontSize="16" Foreground="#FF32EBFB" Padding="0" UseLayoutRounding="False" Margin="0,6,153.5,10.5" Grid.Column="22" Grid.Row="8" HorizontalAlignment="Right" Width="215.013" Grid.ColumnSpan="2"/>
+                    <Label Content="температура н.в. / в.в." FontSize="12" Foreground="#FF32EBFB" Grid.Row="14" Padding="0" Margin="1,3,32,17"/>
+                    <TextBox x:Name="textBox39" HorizontalAlignment="Left" Height="18" Margin="16,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="14" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="71,24,0,0" Grid.Row="14" Grid.RowSpan="2"/>
+                    <GroupBox Grid.Column="13" Header="ЦН" Margin="0,25,0,34" Grid.Row="7" Grid.RowSpan="3" FontSize="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="radioButton5" Content="1" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="34" Padding="4,-5,0,0" Margin="5,2,0,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+                            <RadioButton x:Name="radioButton6" Content="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="33" Margin="5,2,0,0" Padding="4,-5,0,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Column="9" Header="отбор" Margin="0,11,0,12" Grid.Row="4" Grid.RowSpan="2" FontSize="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="radioButton1" Content="1" Padding="4,-5,0,0" Margin="5,2,5,3">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+                            <RadioButton x:Name="radioButton2" Content="2" Grid.Column="1" VerticalAlignment="Top" Height="19" Margin="5,2,0,0" Padding="4,-5,0,0" HorizontalAlignment="Left" Width="33">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Column="9" Header="ЦН" Margin="0,25,0,34" Grid.Row="7" Grid.RowSpan="3" FontSize="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="radioButton4" Content="1" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="34" Padding="4,-5,0,0" Margin="5,2,0,0" >
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+                            <RadioButton x:Name="radioButton3" Content="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="33" Margin="5,2,0,0" Padding="4,-5,0,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Column="19" Header="отбор" Margin="0,11,0,12" Grid.Row="4" Grid.RowSpan="2" FontSize="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="radioButton13" Content="1" Height="18" VerticalAlignment="Top" Padding="4,-5,0,0" Margin="5,2,5,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+                            <RadioButton x:Name="radioButton12" Content="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="33" Margin="5,2,0,0" Padding="4,-5,0,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Column="3" Header="ЦН" Margin="0,25,0,34" Grid.Row="7" Grid.RowSpan="3" FontSize="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="radioButton11" Content="1" Height="18" VerticalAlignment="Top" Padding="4,-5,0,0" Margin="5,2,5,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+                            <RadioButton x:Name="radioButton14" Content="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="33" Margin="5,2,0,0" Padding="4,-5,0,0">
+                                <RadioButton.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadioButton.RenderTransform>
+                            </RadioButton>
+
+                        </Grid>
+                    </GroupBox>
+                    <CheckBox x:Name="checkBox10" Content="фикс." Padding="4,-2,4,0" VerticalContentAlignment="Center" Margin="102,18,0,3" HorizontalAlignment="Left" Width="92" FontSize="11" Foreground="#FF32EBFB">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <TextBox x:Name="textBox60" HorizontalAlignment="Left" Height="18" Margin="90,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="14" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="145,24,0,0" Grid.Row="14" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox61" HorizontalAlignment="Left" Height="18" Margin="97,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontSize="14" Padding="5,-2,5,0" Grid.Row="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+                    <Label Content="С" FontSize="12" Foreground="#FF32EBFB" HorizontalAlignment="Left" Width="27.333" Padding="0" UseLayoutRounding="False" Height="16" VerticalAlignment="Top" Margin="151.667,24.374,0,0" Grid.Row="12" Grid.RowSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabPage2" Header="Турбинное отделение" FontSize="16" Margin="-3,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="84*"/>
+                        <RowDefinition Height="58*"/>
+                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="74*"/>
+                        <RowDefinition Height="61*"/>
+                        <RowDefinition Height="76*"/>
+                        <RowDefinition Height="110*"/>
+                        <RowDefinition Height="59*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="38*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="63*"/>
+                        <ColumnDefinition Width="60*"/>
+                        <ColumnDefinition Width="61*"/>
+                        <ColumnDefinition Width="87*"/>
+                        <ColumnDefinition Width="130*"/>
+                        <ColumnDefinition Width="62*"/>
+                        <ColumnDefinition Width="103*"/>
+                        <ColumnDefinition Width="66*"/>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="137*"/>
+                        <ColumnDefinition Width="56*"/>
+                        <ColumnDefinition Width="64*"/>
+                        <ColumnDefinition Width="32*"/>
+                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="86*"/>
+                        <ColumnDefinition Width="102*"/>
+                        <ColumnDefinition Width="147*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Resources/Турбины.bmp" Stretch="Fill" Grid.ColumnSpan="17" Grid.RowSpan="12" Margin="0,0,-0.32,0"/>
+                    <Label x:Name="label79" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="36.833" Padding="0" UseLayoutRounding="False" Margin="36.54,44.499,0,13.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="3"/>
+                    <Label x:Name="label80" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="33.333" Padding="0" UseLayoutRounding="False" Margin="24.258,44.499,0,13.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="5"/>
+                    <Label x:Name="label81" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="35.833" Padding="0" UseLayoutRounding="False" Margin="0,44.999,0,13.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="8"/>
+                    <Label x:Name="label82" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="42" Padding="0" UseLayoutRounding="False" Margin="2.292,44.999,0,13.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="11"/>
+                    <Label x:Name="label83" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="38.333" Padding="0" UseLayoutRounding="False" Margin="10.292,44.999,0,13.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="15"/>
+                    <Label x:Name="label136" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="36.333" Padding="0" UseLayoutRounding="False" Margin="14.83,2.501,0,29.498" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="2" Grid.Row="1"/>
+                    <Label x:Name="label84" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="33.833" Padding="0" UseLayoutRounding="False" Margin="91.422,55.999,0,26.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"/>
+                    <Label x:Name="label89" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="33.122" Padding="0" UseLayoutRounding="False" Margin="0,61.499,0,47.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="10" Grid.Row="3" Grid.RowSpan="2"/>
+                    <Label x:Name="label138" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="36.833" Padding="0" UseLayoutRounding="False" Margin="5.289,66.499,0,42.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="12" Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="2"/>
+                    <Label x:Name="label139" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="34.833" Padding="0" UseLayoutRounding="False" Margin="5.813,66.499,0,42.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="14" Grid.Row="3" Grid.RowSpan="2"/>
+                    <Label x:Name="label96" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="35.333" Padding="0" UseLayoutRounding="False" Margin="54.33,15.666,0,16.334" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="16" Grid.Row="1"/>
+                    <Label x:Name="label137" Content="0" FontSize="14" Foreground="#FF2EBBC9" HorizontalAlignment="Left" Width="37" Padding="0" UseLayoutRounding="False" Margin="0,13.499,0,34.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="2" Grid.Row="3"/>
+                    <Label x:Name="label93" Content="0" FontSize="14" Foreground="#FF2EBBC9" HorizontalAlignment="Left" Width="39.833" Padding="0" UseLayoutRounding="False" Margin="36.289,4.999,0,30.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="9" Grid.Row="4"/>
+                    <Label x:Name="label92" Content="0" FontSize="14" Foreground="#FF2EBBC9" HorizontalAlignment="Left" Width="41.833" Padding="0" UseLayoutRounding="False" Margin="58.776,37.499,0,10.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="6" Grid.Row="3"/>
+                    <Label x:Name="label91" Content="0" FontSize="14" Foreground="#FF2EBBC9" HorizontalAlignment="Left" Width="36.333" Padding="0" UseLayoutRounding="False" Margin="21.922,13.499,0,34.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="4" Grid.Row="3"/>
+                    <Label x:Name="label95" Content="0" FontSize="14" Foreground="#FF2EBBC9" HorizontalAlignment="Left" Width="37.833" Padding="0" UseLayoutRounding="False" Margin="22.496,40.999,0,7.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="16" Grid.Row="3"/>
+                    <Label x:Name="label94" Content="0" FontSize="14" Foreground="#FF2EBBC9" HorizontalAlignment="Left" Width="43.333" Padding="0" UseLayoutRounding="False" Margin="8.813,10.999,0,37.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="26" FontWeight="Bold" Grid.Column="13" Grid.Row="3" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label118" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="43.833" Padding="0" UseLayoutRounding="False" Margin="4.792,13.499,0,36.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="15" Grid.Row="5"/>
+                    <Label x:Name="label140" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="41.333" Padding="0" UseLayoutRounding="False" Margin="21.813,33.499,0,16.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="13" Grid.Row="5" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label88" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="36" Padding="0" UseLayoutRounding="False" Margin="70.463,12.333,0,37.667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="9" Grid.Row="5"/>
+                    <Label x:Name="label132" Content="0" FontSize="14" Foreground="#FFC92E2E" HorizontalAlignment="Left" Width="31.333" Padding="0" UseLayoutRounding="False" Margin="81.448,11.499,0,38.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label135" Content="0" FontSize="14" Foreground="#FF2EC93C" HorizontalAlignment="Left" Width="40.333" Padding="0" UseLayoutRounding="False" Margin="21.997,0.251,0,31.748" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Row="1"/>
+                    <Label x:Name="label86" Content="0" FontSize="14" Foreground="#FF2EC93C" HorizontalAlignment="Left" Width="36.995" Padding="0" UseLayoutRounding="False" Margin="32.289,8.42,0,15.579" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label85" Content="0" FontSize="14" Foreground="#FF2EC93C" HorizontalAlignment="Left" Width="39.333" Padding="0" UseLayoutRounding="False" Margin="7.58,21.25,0,10.75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="5" Grid.Row="1"/>
+                    <Label x:Name="label87" Content="0" FontSize="14" Foreground="#FF2EC93C" HorizontalAlignment="Left" Width="36.833" Padding="0" UseLayoutRounding="False" Margin="3.544,30.499,0,1.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="15" Grid.Row="1"/>
+                    <Label x:Name="label117" Content="0" FontSize="14" Foreground="#FF2EC93C" HorizontalAlignment="Left" Width="49" Padding="0" UseLayoutRounding="False" Margin="72.888,57,0,27" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="6" Grid.Row="6" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label99" Content="0" FontSize="14" Foreground="#FFC92E2E" HorizontalAlignment="Left" Width="42.666" Padding="0" UseLayoutRounding="False" Margin="23.326,12.834,0,20.166" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="7" Grid.Row="7"/>
+                    <Label x:Name="label100" Content="0" FontSize="14" Foreground="#FFC92E2E" HorizontalAlignment="Left" Width="31.452" Padding="0" UseLayoutRounding="False" Margin="0,4.499,0,28.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="9" Grid.Row="7"/>
+                    <Label x:Name="label97" Content="0" FontSize="14" Foreground="#FFC92E2E" HorizontalAlignment="Left" Width="35.333" Padding="0" UseLayoutRounding="False" Margin="29.253,29.167,0,3.833" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="4" Grid.Row="7"/>
+                    <Label x:Name="label98" Content="0" FontSize="14" Foreground="#FFC92E2E" HorizontalAlignment="Left" Width="32.439" Padding="0" UseLayoutRounding="False" Margin="0.258,28.5,0,4.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="6" Grid.Row="7"/>
+                    <Label x:Name="label126" Content="0" FontSize="14" Foreground="#FF2EC93C" HorizontalAlignment="Left" Width="39" Padding="0" UseLayoutRounding="False" Margin="63.122,28,0,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="15" Grid.Row="8" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                    <ComboBox x:Name="combobox21" Margin="8,55,49,0" VerticalAlignment="Top" Text="" HorizontalContentAlignment="Center" FontSize="18" Grid.ColumnSpan="4" Grid.Row="6" SelectionChanged="combobox21_SelectionChanged"/>
+                    <Label x:Name="label106" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="42" Padding="0" UseLayoutRounding="False" Margin="3.792,57.499,0,24.501" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.787,1.177" FontWeight="Bold" Height="26" Grid.Column="11" Grid.Row="1" Grid.RowSpan="2"/>
+                    <Label x:Name="label103" Content="0" FontSize="14" Foreground="#FFC72121" HorizontalAlignment="Left" Width="40.333" Padding="0" UseLayoutRounding="False" Margin="2.997,1.999,0,8.001" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="1" Grid.Row="10"/>
+                    <Label x:Name="label101" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="40.333" Padding="0" UseLayoutRounding="False" Margin="2.997,56,0,6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Height="26" Grid.Column="1" Grid.Row="7" Grid.RowSpan="2"/>
+                    <Label x:Name="label102" Content="0" FontSize="14" Foreground="#FFF70000" HorizontalAlignment="Left" Width="40.333" Padding="0" UseLayoutRounding="False" Margin="2.997,0,0,4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.787,1.177" FontWeight="Bold" Height="26" Grid.Column="1" Grid.Row="9"/>
+                    <Label Content="Отпуск тепла с подпиткой т/с" FontSize="12" Foreground="#FF32EBFB" Padding="0" Margin="7,11,75.907,57" Grid.ColumnSpan="4"/>
+                    <Label Content="Гкал/ч" FontSize="12" Padding="0" Margin="14.326,32,60.674,36" Grid.Column="1" FontWeight="Bold" Grid.ColumnSpan="2">
+                        <Label.Foreground>
+                            <SolidColorBrush Color="{DynamicResource ArrowBrushComboBox}"/>
+                        </Label.Foreground>
+                    </Label>
+                    <Label x:Name="label1" Content="0" FontSize="14" Foreground="#FF2EC93C" HorizontalAlignment="Left" Width="43.996" Padding="0" UseLayoutRounding="False" Margin="28.33,30.335,0,34.165" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabPage3" Margin="2,0,0,0" HorizontalAlignment="Left" Width="194" VerticalAlignment="Top" Height="43" Header="Котельное отделение" FontSize="16">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="99*"/>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="566*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="99*"/>
+                        <ColumnDefinition Width="190*"/>
+                        <ColumnDefinition Width="188*"/>
+                        <ColumnDefinition Width="174*"/>
+                        <ColumnDefinition Width="182*"/>
+                        <ColumnDefinition Width="217*"/>
+                        <ColumnDefinition Width="165*"/>
+                        <ColumnDefinition Width="135*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Resources/Котлы.bmp" Stretch="Fill" Grid.ColumnSpan="8" Grid.RowSpan="3">
+
+                    </Image>
+                    <Label x:Name="label27" Content="0" HorizontalAlignment="Left" Margin="4,2,0,0" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Height="31" VerticalAlignment="Top"/>
+                    <Label x:Name="label63" Content="0" HorizontalAlignment="Left" Margin="4,3,0,0" VerticalAlignment="Top" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="6" Grid.Row="1"/>
+                    <Label x:Name="label60" Content="0" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="5" Grid.Row="1"/>
+                    <Label x:Name="label59" Content="0" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="4" Grid.Row="1"/>
+                    <Label x:Name="label56" Content="0" HorizontalAlignment="Left" Margin="3,2,0,0" VerticalAlignment="Top" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="3" Grid.Row="1"/>
+                    <Label x:Name="label31" Content="0" HorizontalAlignment="Left" Margin="9,2,0,0" VerticalAlignment="Top" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="2" Grid.Row="1"/>
+                    <Label x:Name="label64" Content="0" HorizontalAlignment="Left" Margin="3,4,0,0" VerticalAlignment="Top" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="7" Grid.Row="1"/>
+                    <Label x:Name="label2" Content="0" HorizontalAlignment="Left" Margin="111,13,0,0" VerticalAlignment="Top" Foreground="#FF21E00E" FontWeight="Bold" Grid.Column="4" FontSize="18"/>
+                    <Label Content="Суммарный расход питательной воды" FontSize="16" Foreground="#FF32EBFB" Padding="0" Margin="167,19,87,56" Grid.ColumnSpan="3" Grid.Column="2"/>
+                    <TextBox x:Name="textBox6_Copy" HorizontalAlignment="Left" Height="24" Margin="63,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" FontSize="14" Padding="5,-2,5,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabPage4" Margin="2,0,-29,0" Header="Основные ТЭХ" FontSize="16" HorizontalAlignment="Left" Width="180">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="91*"/>
+                        <RowDefinition Height="74*"/>
+                        <RowDefinition Height="86*"/>
+                        <RowDefinition Height="78*"/>
+                        <RowDefinition Height="58*"/>
+                        <RowDefinition Height="44*"/>
+                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="46*"/>
+                        <RowDefinition Height="157*"/>
+                        <RowDefinition Height="21*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="543"/>
+                        <ColumnDefinition Width="126"/>
+                        <ColumnDefinition Width="178"/>
+                        <ColumnDefinition Width="509"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="средний КПД брутто энергетических котлов" HorizontalAlignment="Left" Width="533" FontSize="24" Foreground="#FF32EBFB" Grid.Row="4" Height="48" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <Label FontSize="24" Foreground="#FF32EBFB" Height="83" VerticalAlignment="Bottom" Margin="10,0,0,0">
+                        <TextBlock TextWrapping="Wrap" FontSize="24" Height="73" Text="удельный расход условного топлива на отпуск электрической энергии"/>
+                    </Label>
+                    <Label Content="общий расход условного топлива" HorizontalAlignment="Left" Width="523" FontSize="24" Foreground="#FF32EBFB" Grid.Row="6" VerticalContentAlignment="Center" Margin="10,0,0,5"/>
+                    <Label Content="финансовый результат" HorizontalAlignment="Left" Width="510" FontSize="24" Foreground="#FF32EBFB" Grid.Row="7" Height="46" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="10,0,0,0"/>
+                    <Label FontSize="24" Foreground="#FF32EBFB" Grid.Row="1" Margin="10,0,0,0">
+                        <TextBlock Text="удельный расход условного топлива на отпуск тепловой энергии" TextWrapping="Wrap" FontSize="24" Height="68" VerticalAlignment="Center"/>
+                    </Label>
+                    <Label Margin="10,5,10,6" FontSize="24" Foreground="#FF32EBFB" Grid.Row="2">
+                        <TextBlock Text="расход электрической энергии на собственные нужды" TextWrapping="Wrap" FontSize="24" Height="65"/>
+                    </Label>
+                    <Label Margin="10,1,0,0" FontSize="24" Foreground="#FF32EBFB" Grid.Row="3" Height="77" VerticalAlignment="Top">
+                        <TextBlock Text="средний удельный расход тепловой энергии на выработку электрической энергии" TextWrapping="Wrap" FontSize="24"/>
+                    </Label>
+                    <Label x:Name="label119" Content="0" Margin="0,8,6,8" Foreground="#FFEFF7F6" FontSize="28" Grid.Column="2" VerticalContentAlignment="Center"/>
+                    <Label x:Name="label129" Content="0" Grid.Column="2" Foreground="#FFEFF7F6" FontSize="28" Grid.Row="7" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Height="46"/>
+                    <Label x:Name="label123" Content="0" Grid.Column="2" Foreground="#FFEFF7F6" FontSize="28" Grid.Row="4" Margin="0,0,2,0" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Height="58"/>
+                    <Label x:Name="label122" Content="0" Grid.Column="2" Margin="0,10,0,5" Foreground="#FFEFF7F6" FontSize="28" Grid.Row="3" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="63"/>
+                    <Label x:Name="label121" Content="0" Grid.Column="2" Margin="0,10,0,6" Foreground="#FFEFF7F6" FontSize="28" Grid.Row="2" VerticalContentAlignment="Center"/>
+                    <Label x:Name="label120" Content="0" Grid.Column="2" Margin="0,10" Foreground="#FFEFF7F6" FontSize="28" Grid.Row="1"/>
+                    <Label x:Name="label125" Content="0" Grid.Column="2" Foreground="#FFEFF7F6" FontSize="28" Grid.Row="6" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="50"/>
+                    <Label x:Name="label124" Content="0" Grid.Column="2" Foreground="#FFEFF7F6" FontSize="28" Grid.Row="5" Margin="0" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="44"/>
+                    <Label Content="г/кВт*ч" FontSize="24" Foreground="#FF32EBFB" Grid.Column="3" Margin="10,10,0,10" HorizontalAlignment="Left" Width="116" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="71"/>
+                    <Label Content="кг/Гкал" FontSize="24" Foreground="#FF32EBFB" Height="39" VerticalAlignment="Top" Grid.Column="3" Margin="10,15,61,0" Grid.Row="1"/>
+                    <Label Content="МВт" FontSize="24" Foreground="#FF32EBFB" Height="70" VerticalAlignment="Center" Grid.Column="3" Margin="10,10,0,6" HorizontalAlignment="Left" Width="83" Grid.Row="2" VerticalContentAlignment="Center"/>
+                    <Label Content="ккал/кВт*ч" FontSize="24" Foreground="#FF32EBFB" Height="77" VerticalAlignment="Center" Grid.Column="3" Margin="10,1,10,0" Grid.Row="3" VerticalContentAlignment="Center"/>
+                    <Label Content="%" FontSize="24" Foreground="#FF32EBFB" Height="58" VerticalAlignment="Center" Grid.Column="3" Margin="10,0,0,0" HorizontalAlignment="Left" Width="37" Grid.Row="4" VerticalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="т/ч" FontSize="24" Foreground="#FF32EBFB" Height="44" VerticalAlignment="Center" Grid.Column="3" Margin="10,0,0,0" HorizontalAlignment="Left" Width="107" Grid.Row="5" VerticalContentAlignment="Center"/>
+                    <Label Content="т/ч" FontSize="24" Foreground="#FF32EBFB" Height="50" VerticalAlignment="Center" Grid.Column="3" Margin="10,0,0,0" HorizontalAlignment="Left" Width="107" Grid.Row="6" VerticalContentAlignment="Center"/>
+                    <Label Content="тыс.руб." FontSize="24" Foreground="#FF32EBFB" Height="46" VerticalAlignment="Top" Grid.Column="3" Margin="9,0,0,0" HorizontalAlignment="Left" Width="107" Grid.Row="7" VerticalContentAlignment="Center"/>
+                    <Label Margin="10,0" FontSize="24" Foreground="#FF32EBFB" Grid.Row="5">
+                        <TextBlock TextWrapping="Wrap" FontSize="24"><Run Text="расход "/><Run Language="ru-ru" Text="пара"/><Run Text=" 13 "/><Run Language="ru-ru" Text="ата"/><Run Text=" "/><Run Text="на собственные нужды"/></TextBlock>
+                    </Label>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabPage5" Header="Вспомогательные параметры" Margin="-2,0,-5,0" Padding="0" FontSize="16" Height="43" VerticalAlignment="Top">
+                <Grid Background="#FF494949" MinHeight="36" Margin="-4,-3,-4,-4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="259"/>
+                        <ColumnDefinition Width="55"/>
+                        <ColumnDefinition Width="57"/>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="256"/>
+                        <ColumnDefinition Width="56"/>
+                        <ColumnDefinition Width="69"/>
+                        <ColumnDefinition Width="32"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.BindingGroup>
+                        <BindingGroup/>
+                    </Grid.BindingGroup>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="28"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <CheckBox x:Name="checkbox19" Content="" Grid.Column="3" Height="22" Grid.Row="1" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,3,0,6" HorizontalAlignment="Left" Width="16">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox20" Content="" Grid.Column="3" Height="22" Grid.Row="2" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Top" Margin="5,4,0,0" HorizontalAlignment="Left" Width="27">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox29" Content="" Grid.Column="3" Height="22" Grid.Row="3" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,5,0,4" HorizontalAlignment="Left" Width="27">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox28" Content="" Grid.Column="3" Height="22" Grid.Row="4" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="27">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox27" Content="" Grid.Column="3" Height="22" Grid.Row="5" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,5,0,4" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox26" Content="" Grid.Column="3" Height="22" Grid.Row="6" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox25" Content="" Grid.Column="3" Height="22" Grid.Row="7" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,5,0,4" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox24" Content="" Grid.Column="3" Height="22" Grid.Row="8" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox23" Content="" Grid.Column="3" Height="22" Grid.Row="9" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,5,0,4" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox22" Content="" Grid.Column="3" Height="22" Grid.Row="10" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox21" Content="" Grid.Column="3" Height="22" Grid.Row="11" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,5,0,4" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox30" Content="" Grid.Column="3" Height="22" Grid.Row="12" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox7" Content="" Grid.Column="3" Height="22" Grid.Row="15" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,5,0,4" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox8" Content="" Grid.Column="3" Height="22" Grid.Row="16" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <TextBox x:Name="textBox17" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="1" Margin="0,1" BorderThickness="1,0" HorizontalContentAlignment="Center"/>
+                    <TextBox x:Name="textBox23" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="2" Margin="0,1,0,0" HorizontalContentAlignment="Center"/>
+                    <TextBox x:Name="textBox34" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="10" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox33" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="9" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox32" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="8" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox31" Grid.Column="1" Height="Auto" Margin="0,1" TextWrapping="Wrap" Grid.Row="7" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox27" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="6" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox26" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="5" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox25" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="4" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox24" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="3" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox35" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="11" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox38" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="16" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox37" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="15" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox36" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="12" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBlock Margin="80,0,81,0" TextWrapping="Wrap" Foreground="#FF02090A" FontSize="20"><Run Language="ru-ru" Text="Параметр"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="0,5" TextWrapping="Wrap" Width="254" Grid.Row="1" Padding="5,0,0,0"><Run Language="ru-ru" Text="Электрическая мощность ТГ-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="0,5" TextWrapping="Wrap" Width="259" Grid.Row="2" Padding="5,0,0,8"><Run Language="ru-ru" Text="Нагрузка Т-отбора ТГ-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="259" Grid.Row="3" Padding="5,0,0,8" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка П-отбора ТГ-2"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="259" Grid.Row="4" Padding="5,0,0,8" Margin="0,5"><Run Language="ru-ru" Text="Электрическая мощность ТГ-3"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="5" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка Т-отбора ТГ-3"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="6" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Электрическая мощность ТГ-4"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="7" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка Т-отбора ТГ-4"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="259" Grid.Row="8" Padding="5,0,0,8" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка П-отбора ТГ-5"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="9" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Электрическая мощность ТГ-6"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="10" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка Т-отбора ТГ-6"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="11" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка П-отбора ТГ-6"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="12" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка РОУ-30/13"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="15" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Паровая нагрузка ПТН-1"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="16" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Паровая нагрузка ПТН-2"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="245,0,0,0" TextWrapping="Wrap" Width="98" Foreground="#FF02090A" FontSize="20" Grid.ColumnSpan="3"><Run Language="ru-ru" Text="Значение"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="1" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="МВт"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="4" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="МВт"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="52" Grid.Row="2" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="Гкал/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="3" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="9" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="МВт"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="6" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="МВт"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="52" Grid.Row="5" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="Гкал/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,1,0,0" TextWrapping="Wrap" Width="52" Grid.Row="7" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="Гкал/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="8" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="52" Grid.Row="10" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="Гкал/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="11" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="12" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="16" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="15" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="98" Foreground="#FF02090A" FontSize="20" Grid.Column="2" Grid.ColumnSpan="3" Margin="28,0,0,0"><Run Language="ru-ru" Text="Фиксация"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="17" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Температурный напор конд. ТГ-1"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="18" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Температурный напор конд. ТГ-3"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="19" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Температурный напор конд. ТГ-4"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="20" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Температурный напор конд. ТГ-6"/></TextBlock>
+                    <TextBox x:Name="textBox45" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="17" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox46" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="18" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox47" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="19" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox48" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="20" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="42" Grid.Row="17" Padding="0,7,0,0" Grid.Column="2" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="42" Grid.Row="20" Padding="0,7,0,0" Grid.Column="2" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="42" Grid.Row="19" Padding="0,7,0,0" Grid.Column="2" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="42" Grid.Row="18" Padding="0,7,0,0" Grid.Column="2" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <CheckBox x:Name="checkbox1" Content="" Grid.Column="3" Height="22" Grid.Row="17" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox2" Content="" Grid.Column="3" Height="22" Grid.Row="18" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox3" Content="" Grid.Column="3" Height="22" Grid.Row="19" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox4" Content="" Grid.Column="3" Height="22" Grid.Row="20" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="1" Padding="5,0,0,0" HorizontalAlignment="Left" Width="259" Grid.ColumnSpan="2" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Температурный напор ПСВ ТГ-1"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="2" Padding="5,0,0,0" HorizontalAlignment="Left" Width="259" Grid.ColumnSpan="2" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Температурный напор ПСГ ТГ-3"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="3" Padding="5,0,0,0" HorizontalAlignment="Left" Width="259" Grid.ColumnSpan="2" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Температурный напор ПСГ ТГ-4"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="4" Padding="5,0,0,0" HorizontalAlignment="Left" Width="259" Grid.ColumnSpan="2" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Температурный напор ПСГ ТГ-6"/></TextBlock>
+                    <TextBox x:Name="textBox49" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="1" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0" Text="12"/>
+                    <TextBox x:Name="textBox50" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="2" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0" Text="10"/>
+                    <TextBox x:Name="textBox51" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="3" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0" Text="10"/>
+                    <TextBox x:Name="textBox52" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="4" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0" Text="8"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="35" Grid.Row="1" Padding="0,7,0,0" Grid.Column="6" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="35" Grid.Row="4" Padding="0,7,0,0" Grid.Column="6" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="35" Grid.Row="3" Padding="0,7,0,0" Grid.Column="6" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="35" Grid.Row="2" Padding="0,7,0,0" Grid.Column="6" Margin="5,0,0,0"><Run Language="ru-ru" Text="С"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="199" Grid.Row="5" Padding="5,0,0,0" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Давление в Т-отборе ТГ-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="199" Grid.Row="8" Padding="5,0,0,0" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Давление в Т-отборе ТГ-6"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="199" Grid.Row="7" Padding="5,0,0,0" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Давление в Т-отборе ТГ-4"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="199" Grid.Row="6" Padding="5,0,0,0" Grid.Column="4" Margin="0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Давление в Т-отборе ТГ-3"/></TextBlock>
+                    <TextBox x:Name="textBox53" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="5" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox56" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="8" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox55" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="7" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBox x:Name="textBox54" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="6" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBlock Margin="5,0,0,0" TextWrapping="Wrap" Grid.Row="5" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="59"><Run Language="ru-ru" Text="кгс/см2"/></TextBlock>
+                    <TextBlock Margin="5,0,0,0" TextWrapping="Wrap" Grid.Row="7" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="59" Height="31" VerticalAlignment="Top"><Run Language="ru-ru" Text="кгс/см2"/></TextBlock>
+                    <TextBlock Margin="5,0,0,0" TextWrapping="Wrap" Grid.Row="8" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="59"><Run Language="ru-ru" Text="кгс/см2"/></TextBlock>
+                    <TextBlock Margin="5,0,0,0" TextWrapping="Wrap" Grid.Row="6" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="59"><Run Language="ru-ru" Text="кгс/см2"/></TextBlock>
+                    <TextBlock Margin="53,0" TextWrapping="Wrap" Foreground="#FF02090A" FontSize="20" Grid.Column="4"><Run Language="ru-ru" Text="Параметр"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="238,0,0,0" TextWrapping="Wrap" Width="98" Foreground="#FF02090A" FontSize="20" Grid.Column="4" Grid.ColumnSpan="3"><Run Language="ru-ru" Text="Значение"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="98" Foreground="#FF02090A" FontSize="20" Grid.Column="6" Margin="45,0,0,0" Grid.ColumnSpan="3"><Run Language="ru-ru" Text="Фиксация"/></TextBlock>
+                    <CheckBox x:Name="checkbox35" Content="" Grid.Column="7" Height="22" Grid.Row="5" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,2,5,7">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox38" Content="" Grid.Column="7" Height="22" Grid.Row="8" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,2,4,7">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox37" Content="" Grid.Column="7" Height="22" Grid.Row="7" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,2,5,7">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox x:Name="checkbox36" Content="" Grid.Column="7" Height="22" Grid.Row="6" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,2,5,7">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="13" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка РОУ-140/13"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="14" Padding="5,0,0,8" HorizontalAlignment="Left" Width="259" Margin="0,5"><Run Language="ru-ru" Text="Нагрузка РОУ-140/30"/></TextBlock>
+                    <CheckBox x:Name="checkbox5" Content="" Grid.Column="3" Height="22" Grid.Row="13" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <TextBox x:Name="textBox43" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="13" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="13" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <CheckBox x:Name="checkbox6" Content="" Grid.Column="3" Height="22" Grid.Row="14" Padding="4,-2,4,0" VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5,4,0,5" HorizontalAlignment="Left" Width="18">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <TextBox x:Name="textBox44" Grid.Column="1" Height="Auto" TextWrapping="Wrap" Grid.Row="14" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Width="42" Grid.Row="14" Padding="0,7,0,0" Grid.Column="2"><Run Language="ru-ru" Text="т/ч"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="199" Grid.Row="9" Padding="5,0,0,0" Grid.Column="4" Margin="4,5,0,4" VerticalAlignment="Center"><Run Language="ru-ru" Text="Температура пара ТГ-1"/></TextBlock>
+                    <TextBox x:Name="textBox57" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="9" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBlock Margin="5,0,0,0" TextWrapping="Wrap" Grid.Row="9" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="59"><Run Language="ru-ru" Text="C"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="252" Grid.Row="10" Padding="5,0,0,0" Grid.Column="4" Margin="4,6,0,1" VerticalAlignment="Center" Height="24"><Run Language="ru-ru" Text="Коэф. ценности тепла П отбора"/></TextBlock>
+                    <TextBox x:Name="textBox58" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="10" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="252" Grid.Row="11" Padding="5,0,0,0" Grid.Column="4" Margin="4,7,0,1" VerticalAlignment="Center" Height="23"><Run Language="ru-ru" Text="Коэф. ценности тепла Т отбора"/></TextBlock>
+                    <TextBox x:Name="textBox59" Grid.Column="5" Height="Auto" TextWrapping="Wrap" Grid.Row="11" Margin="0,1" HorizontalContentAlignment="Center" BorderThickness="1,0"/>
+                    <Label Content="Стоимость электроэнергии" HorizontalAlignment="Left" Width="225" FontSize="16" Foreground="#FF32EBFB" Grid.Row="12" Padding="0" Height="25" VerticalAlignment="Top" Margin="10,5,0,0" Grid.Column="4" VerticalContentAlignment="Center"/>
+                    <Label Content="Стоимость э/э на СН" HorizontalAlignment="Left" Width="246" FontSize="16" Foreground="#FF32EBFB" Grid.Row="13" Padding="0" Height="22" VerticalAlignment="Top" Margin="10,7,0,0" Grid.Column="4"/>
+                    <Label Content="Стоимость топлива" HorizontalAlignment="Left" Width="178" FontSize="16" Foreground="#FF32EBFB" Grid.Row="14" Padding="0" Height="21" VerticalAlignment="Top" Margin="10,6,0,0" Grid.Column="4"/>
+                    <Label Content="Стоимость т/э в ГВ" HorizontalAlignment="Left" Width="246" FontSize="16" Foreground="#FF32EBFB" Grid.Row="15" Padding="0" Height="21" VerticalAlignment="Top" Margin="10,6,0,0" Grid.Column="4"/>
+                    <TextBox x:Name="textBox10" HorizontalAlignment="Left" Height="Auto" Margin="0,1" TextWrapping="Wrap" Width="56" FontSize="14" Padding="5,-2,5,0" Grid.Row="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="5"/>
+                    <TextBox x:Name="textBox16" HorizontalAlignment="Left" Height="Auto" Margin="0,1" TextWrapping="Wrap" Width="56" FontSize="14" Padding="5,-2,5,0" Grid.Row="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="5"/>
+                    <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="Auto" Margin="0,1" TextWrapping="Wrap" Width="56" FontSize="14" Padding="5,-2,5,0" Grid.Row="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="5"/>
+                    <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="Auto" Margin="0,1" TextWrapping="Wrap" Width="56" FontSize="14" Padding="5,-2,5,0" Grid.Row="13" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="5"/>
+                    <TextBlock Margin="2,0,0,0" TextWrapping="Wrap" Grid.Row="12" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="64"><Run Language="ru-ru" Text="руб/МВт"/></TextBlock>
+                    <TextBlock Margin="2,0,0,0" TextWrapping="Wrap" Grid.Row="13" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="64"><Run Language="ru-ru" Text="руб/МВт"/></TextBlock>
+                    <TextBlock Margin="2,0,0,0" TextWrapping="Wrap" Grid.Row="14" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="64"><Run Language="ru-ru" Text="руб/т"/></TextBlock>
+                    <TextBlock Margin="2,0,0,0" TextWrapping="Wrap" Grid.Row="15" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="67"><Run Language="ru-ru" Text="руб/Гкал"/></TextBlock>
+                    <Label Content="Стоимость т/э в паре 13 ата" HorizontalAlignment="Left" Width="246" FontSize="16" Foreground="#FF32EBFB" Grid.Row="16" Padding="0" Height="21" VerticalAlignment="Top" Margin="10,5,0,0" Grid.Column="4"/>
+                    <Label Content="Стоимость т/э в паре 45 ата" HorizontalAlignment="Left" Width="246" FontSize="16" Foreground="#FF32EBFB" Grid.Row="18" Padding="0" Height="21" VerticalAlignment="Top" Margin="10,5,0,0" Grid.Column="4"/>
+                    <Label Content="Стоимость т/э в паре 30 ата" HorizontalAlignment="Left" Width="246" FontSize="16" Foreground="#FF32EBFB" Grid.Row="17" Padding="0" Height="21" VerticalAlignment="Top" Margin="10,5,0,0" Grid.Column="4"/>
+                    <TextBox x:Name="textBox63" HorizontalAlignment="Left" Height="Auto" Margin="0,1" TextWrapping="Wrap" Width="56" FontSize="14" Padding="5,-2,5,0" Grid.Row="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="5"/>
+                    <TextBox x:Name="textBox62" HorizontalAlignment="Left" Height="Auto" Margin="0,1" TextWrapping="Wrap" Width="56" FontSize="14" Padding="5,-2,5,0" Grid.Row="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="5"/>
+                    <TextBox x:Name="textBox64" HorizontalAlignment="Left" Height="Auto" Margin="0,1" TextWrapping="Wrap" Width="56" FontSize="14" Padding="5,-2,5,0" Grid.Row="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="5"/>
+                    <TextBlock Margin="2,0,0,0" TextWrapping="Wrap" Grid.Row="18" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="67"><Run Language="ru-ru" Text="руб/Гкал"/></TextBlock>
+                    <TextBlock Margin="2,0,0,0" TextWrapping="Wrap" Grid.Row="17" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="67"><Run Language="ru-ru" Text="руб/Гкал"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="16" Padding="0,7,0,0" Grid.Column="6" HorizontalAlignment="Left" Width="67" Margin="2,0,0,0"><Run Language="ru-ru" Text="руб/Гкал"/></TextBlock>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>
